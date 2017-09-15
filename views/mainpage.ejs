@@ -1,0 +1,41 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<title>Main Page</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container mt-4">
+			<h1>API Basejump: Timestamp microservice</h1>
+			<blockquote class="blockquote">
+				<p>User Stories:</p>
+				<ol>
+					<li><p>I can pass astring as paramters and it will check to see whether that strign contains either unix timestamp or a natural languages date (example:  January 1, 2016)</p></li>
+					<li><p>If it does, it return both the Unix timestamp and the natural language from thta date</p></li>
+					<li>
+						<p>if it does not contain a data or unitx timestamp, it return null for those property</p>
+					</li>
+				</ol>
+			</blockquote>
+			<div id="example">
+				<h3>Example Usage:</h3>
+				<p><mark>https://localhost:3000/December%2015,%202015<mark></p>
+				<p><mark>https://timestamp-ms.herokuapp.com/1450137600<mark></p>
+			</div>
+			<div id="output">
+				<h3>Example Output:</h3>
+				<p><mark>{ "unix": 1450137600, "natural": "December 15, 2015" }</mark></p>
+			</div>
+
+		</div>
+		<!--Jquery -->
+		<script
+  		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  		integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  		crossorigin="anonymous"></script>
+		<!--BootStrap -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	</body>
+</html>
